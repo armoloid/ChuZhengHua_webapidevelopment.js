@@ -78,7 +78,7 @@ module.exports = {
         if (!lessonName){
             return this.lessons;
         }
-        const lesson = this.lessons.find(l=>l.id == lessonName);
+        const lesson = this.lessons.find(l=>l.title == lessonName);
         if (!lesson){
             return "no result found"
         }
